@@ -396,6 +396,18 @@ def track():
         created_at=clean(row)["created_at"],
     )
 
+from flask import send_from_directory as _sfd
+DIST = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "frontend", "dist")
+
+@app.get("/", defaults={"path": ""})
+@app.get("/<path:path>")
+def spa(path):
+    if path.startswith("api/"):
+        return jsonify(error="Not found"), 404
+    full = os.path.join(DIST, path)
+    if path and os.path.isfile(full):
+        return _sfd(DIST, path)
+    return _sfd(DIST, "index.html")
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
