@@ -1,0 +1,527 @@
+{
+  "notices": [
+    {
+      "title": "End of Term Exam Timetable Released",
+      "department": "Examinations",
+      "type": "Notice",
+      "date": "2026-10-15",
+      "body": "The end of term examination timetable is now available. Check your exam venue and time, and report 30 minutes early."
+    },
+    {
+      "title": "ICT Lab Maintenance on Saturday",
+      "department": "ICT",
+      "type": "Notice",
+      "date": "2026-10-14",
+      "body": "Computer laboratories will be closed from 8am to 1pm for routine maintenance."
+    },
+    {
+      "title": "Weekly Class Schedule - Week 7",
+      "department": "Software Development",
+      "type": "Weekly schedule",
+      "date": "2026-10-12",
+      "body": "The updated weekly class schedule for Software Development classes has been uploaded."
+    },
+    {
+      "title": "Missing Marks Reporting Window",
+      "department": "Examinations",
+      "type": "Notice",
+      "date": "2026-10-10",
+      "body": "Students with missing marks should report to their unit trainer first, then to the Head of Department if unresolved."
+    },
+    {
+      "title": "Student Affairs Open Day",
+      "department": "Student Affairs",
+      "type": "Notice",
+      "date": "2026-10-09",
+      "body": "Meet the Student Affairs team to learn about clubs, welfare support and accommodation."
+    },
+    {
+      "title": "Fee Balance Statements Available",
+      "department": "Finance",
+      "type": "Notice",
+      "date": "2026-10-08",
+      "body": "Students can check their fee balance at the Finance office or through the online payment procedure."
+    },
+    {
+      "title": "New Intake Registration",
+      "department": "Registry/Admissions",
+      "type": "Notice",
+      "date": "2026-10-05",
+      "body": "Registration for the new intake is ongoing. Visit the Registry for requirements and guidance."
+    }
+  ],
+  "forms": [
+    {
+      "name": "Missing Marks Request Form",
+      "department": "Examinations",
+      "description": "Use when a mark is missing from your results.",
+      "file": "#"
+    },
+    {
+      "name": "Exam Retake Application",
+      "department": "Examinations",
+      "description": "Apply to retake a failed unit.",
+      "file": "#"
+    },
+    {
+      "name": "Fee Payment Plan Request",
+      "department": "Finance",
+      "description": "Request to pay fees in instalments.",
+      "file": "#"
+    },
+    {
+      "name": "Accommodation Booking Form",
+      "department": "Student Affairs",
+      "description": "Book hostel accommodation.",
+      "file": "#"
+    },
+    {
+      "name": "Lost Mess Card Replacement",
+      "department": "Student Affairs",
+      "description": "Request a replacement for a lost cafeteria card.",
+      "file": "#"
+    },
+    {
+      "name": "ICT Support Request Form",
+      "department": "ICT",
+      "description": "Request ICT help or report a fault.",
+      "file": "#"
+    },
+    {
+      "name": "Course Transfer Form",
+      "department": "Registry/Admissions",
+      "description": "Request to change course.",
+      "file": "#"
+    }
+  ],
+  "contacts": [
+    {
+      "name": "Trainer A (dummy)",
+      "role": "Unit Trainer - Programming",
+      "department": "Software Development",
+      "email": "trainer.a@example.ac.ke",
+      "office": "Block B, Room 12",
+      "hours": "Mon & Wed, 2pm - 4pm"
+    },
+    {
+      "name": "Trainer B (dummy)",
+      "role": "Unit Trainer - Web Design",
+      "department": "Software Development",
+      "email": "trainer.b@example.ac.ke",
+      "office": "Block B, Room 14",
+      "hours": "Tue & Thu, 10am - 12pm"
+    },
+    {
+      "name": "HOD Software Dev (dummy)",
+      "role": "Head of Department",
+      "department": "Software Development",
+      "email": "hod.sd@example.ac.ke",
+      "office": "Block B, Room 1",
+      "hours": "Daily, 8am - 10am"
+    },
+    {
+      "name": "Exams Officer (dummy)",
+      "role": "Examinations Officer",
+      "department": "Examinations",
+      "email": "exams@example.ac.ke",
+      "office": "Administration Block, Room 5",
+      "hours": "Mon - Fri, 8am - 5pm"
+    },
+    {
+      "name": "Student Affairs Officer (dummy)",
+      "role": "Student Welfare",
+      "department": "Student Affairs",
+      "email": "studentaffairs@example.ac.ke",
+      "office": "Student Centre, Room 2",
+      "hours": "Mon - Fri, 8am - 5pm"
+    },
+    {
+      "name": "ICT Helpdesk (dummy)",
+      "role": "ICT Support",
+      "department": "ICT",
+      "email": "helpdesk@example.ac.ke",
+      "office": "ICT Block, Room 3",
+      "hours": "Mon - Fri, 8am - 5pm"
+    },
+    {
+      "name": "Finance Officer (dummy)",
+      "role": "Fees and Payments",
+      "department": "Finance",
+      "email": "finance@example.ac.ke",
+      "office": "Administration Block, Room 9",
+      "hours": "Mon - Fri, 8am - 4pm"
+    },
+    {
+      "name": "Registrar Office (dummy)",
+      "role": "Admissions",
+      "department": "Registry/Admissions",
+      "email": "registry@example.ac.ke",
+      "office": "Administration Block, Room 2",
+      "hours": "Mon - Fri, 8am - 5pm"
+    }
+  ],
+  "faqs": [
+    {
+      "service": "Exams",
+      "question": "What should I do if my mark is missing?",
+      "answer": "Search your unit, select your trainer and contact them first. If you are not directed to a contact, go to your Head of Department. You can also visit the Examinations office."
+    },
+    {
+      "service": "Exams",
+      "question": "How do I know if my exam venue or time changes?",
+      "answer": "Changes are sent to every student by email and posted on the Notice Board."
+    },
+    {
+      "service": "Exams",
+      "question": "How do I apply for a retake?",
+      "answer": "Download the Exam Retake Application form, fill it in and take it to the Examinations office. Ask the office for the retake fee."
+    },
+    {
+      "service": "Finance",
+      "question": "How do I check my fee balance?",
+      "answer": "Follow the online payment procedure to view your balance, or visit the Finance office."
+    },
+    {
+      "service": "Finance",
+      "question": "Who do I contact if my payment fails?",
+      "answer": "Contact the Finance Officer by email or visit the Finance office with your payment reference."
+    },
+    {
+      "service": "Mess",
+      "question": "How do I recharge my mess card?",
+      "answer": "Recharge your card at the Finance or mess counter, then check your balance and print a receipt there."
+    },
+    {
+      "service": "Mess",
+      "question": "What if I lose my mess card?",
+      "answer": "Report to Student Affairs. The administrator will deactivate the lost card and issue a replacement."
+    },
+    {
+      "service": "Mess",
+      "question": "What if food is unavailable after I paid?",
+      "answer": "Report to the mess supervisor to see when food will be available, or request a refund of your money through Student Affairs."
+    },
+    {
+      "service": "Admissions",
+      "question": "How do I join the institution?",
+      "answer": "Visit the Registry/Admissions office for requirements and application guidance."
+    },
+    {
+      "service": "Admissions",
+      "question": "How do I book accommodation?",
+      "answer": "Download the Accommodation Booking Form and submit it to Student Affairs."
+    },
+    {
+      "service": "ICT Support",
+      "question": "How do I request ICT support?",
+      "answer": "Use the ICT Support page or visit the ICT Helpdesk with the details of the problem."
+    },
+    {
+      "service": "Complaints",
+      "question": "Who do I send a complaint to?",
+      "answer": "Send it to the department concerned. If you are unsure, send it to Student Affairs and it will be directed correctly."
+    }
+  ],
+  "guides": [
+    {
+      "section": "exams_normal",
+      "issue": "Where and when do I sit my exam?",
+      "steps": "Open Academics and check the Examination Timetable.\nNote your unit, date, time and venue.\nArrive 30 minutes early with your student ID.",
+      "cost": null,
+      "location": "Examinations office, Administration Block, Room 5",
+      "note": "If the venue or time changes, a notification is sent to every student by email.",
+      "contact": "Exams Officer (dummy)",
+      "form": null
+    },
+    {
+      "section": "exams_normal",
+      "issue": "How do I get my marks / results?",
+      "steps": "Visit the Examinations department location below.\nNormal exam results are issued immediately once released.\nIf a mark is missing, use the Missing Mark helper on this page.",
+      "cost": null,
+      "location": "Examinations office, Administration Block, Room 5",
+      "note": null,
+      "contact": "Exams Officer (dummy)",
+      "form": null
+    },
+    {
+      "section": "exams_retake",
+      "issue": "How do I apply for a retake?",
+      "steps": "Download the Exam Retake Application form.\nFill it in and attach your fee payment receipt.\nSubmit it to the Examinations office.",
+      "cost": "Confirm the current retake fee per unit with the Examinations office.",
+      "location": "Examinations office, Administration Block, Room 5",
+      "note": null,
+      "contact": "Exams Officer (dummy)",
+      "form": "Exam Retake Application"
+    },
+    {
+      "section": "exams_retake",
+      "issue": "Who do I ask for other exam enquiries?",
+      "steps": "Visit the Examinations office or send an email.",
+      "cost": null,
+      "location": "Examinations office, Administration Block, Room 5",
+      "note": null,
+      "contact": "Exams Officer (dummy)",
+      "form": null
+    },
+    {
+      "section": "finance",
+      "issue": "How do I pay fees online?",
+      "steps": "Go to the institution online payment page.\nEnter the course and your student details.\nPay using the payment method shown.\nKeep the confirmation message as proof of payment.",
+      "cost": null,
+      "location": null,
+      "note": null,
+      "contact": "Finance Officer (dummy)",
+      "form": null
+    },
+    {
+      "section": "finance",
+      "issue": "How do I check my fee balance?",
+      "steps": "Use the online payment procedure to view your balance.\nOr visit the Finance office with your student ID.",
+      "cost": null,
+      "location": "Finance office, Administration Block, Room 9",
+      "note": null,
+      "contact": "Finance Officer (dummy)",
+      "form": null
+    },
+    {
+      "section": "finance",
+      "issue": "My payment failed. Who do I contact?",
+      "steps": "Keep the payment reference or message.\nEmail or visit the Finance Officer with the reference.",
+      "cost": null,
+      "location": null,
+      "note": null,
+      "contact": "Finance Officer (dummy)",
+      "form": null
+    },
+    {
+      "section": "finance",
+      "issue": "I cannot pay in one go.",
+      "steps": "Download the Fee Payment Plan Request form.\nSubmit it to the Finance office.",
+      "cost": null,
+      "location": null,
+      "note": null,
+      "contact": "Finance Officer (dummy)",
+      "form": "Fee Payment Plan Request"
+    },
+    {
+      "section": "mess",
+      "issue": "How do I recharge my mess card?",
+      "steps": "Go to the mess or Finance counter.\nPay the amount you want to load.\nAsk for a receipt and confirm the new balance.",
+      "cost": null,
+      "location": null,
+      "note": null,
+      "contact": "Finance Officer (dummy)",
+      "form": null
+    },
+    {
+      "section": "mess",
+      "issue": "How do I check my balance or print a receipt?",
+      "steps": "Ask for a balance check at the mess counter.\nRequest a printed receipt at the same counter.",
+      "cost": null,
+      "location": null,
+      "note": null,
+      "contact": "Student Affairs Officer (dummy)",
+      "form": null
+    },
+    {
+      "section": "mess",
+      "issue": "I lost my mess card.",
+      "steps": "Report immediately to Student Affairs so the card is deactivated.\nThe administrator deactivates the old card.\nDownload the Lost Mess Card Replacement form and submit it.",
+      "cost": null,
+      "location": null,
+      "note": null,
+      "contact": "Student Affairs Officer (dummy)",
+      "form": "Lost Mess Card Replacement"
+    },
+    {
+      "section": "mess",
+      "issue": "Food is not available. What do I do?",
+      "steps": "Ask the mess supervisor when the food will be available.\nCheck the Notice Board for updates.",
+      "cost": null,
+      "location": null,
+      "note": null,
+      "contact": "Student Affairs Officer (dummy)",
+      "form": null
+    },
+    {
+      "section": "mess",
+      "issue": "Food was unavailable after I paid. How do I reclaim my money?",
+      "steps": "Keep your receipt or card balance record.\nReport to Student Affairs and request a refund.",
+      "cost": null,
+      "location": null,
+      "note": null,
+      "contact": "Student Affairs Officer (dummy)",
+      "form": null
+    },
+    {
+      "section": "admissions",
+      "issue": "How do I join the institution?",
+      "steps": "Visit the Registry/Admissions office.\nGet the entry requirements for your course.\nSubmit your application documents.",
+      "cost": null,
+      "location": "Registry, Administration Block, Room 2",
+      "note": null,
+      "contact": "Registrar Office (dummy)",
+      "form": null
+    },
+    {
+      "section": "admissions",
+      "issue": "How do I book accommodation?",
+      "steps": "Download the Accommodation Booking Form.\nSubmit it to Student Affairs.",
+      "cost": null,
+      "location": "Student Centre, Room 2",
+      "note": null,
+      "contact": "Student Affairs Officer (dummy)",
+      "form": "Accommodation Booking Form"
+    },
+    {
+      "section": "admissions",
+      "issue": "Where do I find my school or department?",
+      "steps": "Software Development and ICT: Block B and ICT Block.\nExaminations, Finance and Registry: Administration Block.\nStudent Affairs: Student Centre.",
+      "cost": null,
+      "location": null,
+      "note": null,
+      "contact": "Registrar Office (dummy)",
+      "form": null
+    },
+    {
+      "section": "ict",
+      "issue": "How do I request ICT support?",
+      "steps": "Download and fill the ICT Support Request Form.\nSubmit it at the ICT Helpdesk or email it.",
+      "cost": null,
+      "location": "ICT Block, Room 3",
+      "note": null,
+      "contact": "ICT Helpdesk (dummy)",
+      "form": "ICT Support Request Form"
+    },
+    {
+      "section": "ict",
+      "issue": "I cannot connect to the campus network.",
+      "steps": "Confirm you are using the correct network name.\nRestart your device and try again.\nIf it still fails, report to the ICT Helpdesk with your device and location.",
+      "cost": null,
+      "location": null,
+      "note": null,
+      "contact": "ICT Helpdesk (dummy)",
+      "form": null
+    },
+    {
+      "section": "ict",
+      "issue": "A computer in the lab is faulty.",
+      "steps": "Note the lab and the computer number.\nReport it to the ICT Helpdesk.",
+      "cost": null,
+      "location": null,
+      "note": null,
+      "contact": "ICT Helpdesk (dummy)",
+      "form": null
+    }
+  ],
+  "units": [
+    {
+      "name": "Web Design",
+      "department": "Software Development",
+      "trainers": [
+        "Trainer B (dummy)"
+      ]
+    },
+    {
+      "name": "Programming Fundamentals",
+      "department": "Software Development",
+      "trainers": [
+        "Trainer A (dummy)"
+      ]
+    },
+    {
+      "name": "Database Systems",
+      "department": "Software Development",
+      "trainers": [
+        "Trainer A (dummy)",
+        "Trainer B (dummy)"
+      ]
+    },
+    {
+      "name": "ICT Support Skills",
+      "department": "ICT",
+      "trainers": []
+    }
+  ],
+  "fees": [
+    {
+      "course": "Diploma in Software Development",
+      "per_term": "KES 25,000 (dummy)"
+    },
+    {
+      "course": "Diploma in ICT",
+      "per_term": "KES 24,000 (dummy)"
+    },
+    {
+      "course": "Certificate in Computer Studies",
+      "per_term": "KES 18,000 (dummy)"
+    }
+  ],
+  "course_requirements": [
+    {
+      "course": "Diploma in Software Development",
+      "requirement": "KCSE C- and above (dummy)",
+      "duration": "2 years"
+    },
+    {
+      "course": "Diploma in ICT",
+      "requirement": "KCSE C- and above (dummy)",
+      "duration": "2 years"
+    },
+    {
+      "course": "Certificate in Computer Studies",
+      "requirement": "KCSE D+ and above (dummy)",
+      "duration": "1 year"
+    }
+  ],
+  "exam_timetable": [
+    {
+      "unit": "Web Design",
+      "exam_date": "2026-11-03",
+      "exam_time": "9:00 AM",
+      "venue": "Lab 2"
+    },
+    {
+      "unit": "Programming Fundamentals",
+      "exam_date": "2026-11-05",
+      "exam_time": "2:00 PM",
+      "venue": "Hall A"
+    },
+    {
+      "unit": "Database Systems",
+      "exam_date": "2026-11-09",
+      "exam_time": "9:00 AM",
+      "venue": "Hall B"
+    }
+  ],
+  "academic_calendar": [
+    {
+      "event": "Term opens",
+      "period": "2026-09-07"
+    },
+    {
+      "event": "Mid-term break",
+      "period": "2026-10-19 to 2026-10-23"
+    },
+    {
+      "event": "End of term exams",
+      "period": "2026-11-03 to 2026-11-13"
+    },
+    {
+      "event": "Term closes",
+      "period": "2026-11-20"
+    }
+  ],
+  "assignments": [
+    {
+      "unit": "Web Design",
+      "assignment": "Build a 3-page responsive website",
+      "due_date": "2026-10-30"
+    },
+    {
+      "unit": "Database Systems",
+      "assignment": "Design an ER diagram for a library",
+      "due_date": "2026-11-01"
+    }
+  ]
+}

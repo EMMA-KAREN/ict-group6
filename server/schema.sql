@@ -1,0 +1,138 @@
+-- Run with:  mysql -u portal_user -p portal_db < schema.sql
+USE portal_db;
+
+CREATE TABLE IF NOT EXISTS users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50) NOT NULL UNIQUE,
+  password_hash VARCHAR(255) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS notices (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(200) NOT NULL,
+  department VARCHAR(100) NOT NULL,
+  `type` VARCHAR(30) NOT NULL DEFAULT 'Notice',
+  `date` DATE NOT NULL,
+  body TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS forms (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(200) NOT NULL,
+  department VARCHAR(100) NOT NULL,
+  description TEXT NOT NULL,
+  `file` VARCHAR(255) NOT NULL DEFAULT '#'
+);
+
+CREATE TABLE IF NOT EXISTS contacts (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  `role` VARCHAR(100) NOT NULL,
+  department VARCHAR(100) NOT NULL,
+  email VARCHAR(120) NOT NULL,
+  office VARCHAR(100) NOT NULL,
+  hours VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS faqs (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  service VARCHAR(50) NOT NULL,
+  question VARCHAR(255) NOT NULL,
+  answer TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS complaints (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  email VARCHAR(120) NOT NULL,
+  department VARCHAR(100) NOT NULL,
+  routed_to VARCHAR(100) NOT NULL,
+  subject VARCHAR(200) NOT NULL,
+  message TEXT NOT NULL,
+  status ENUM('New','In progress','Resolved') NOT NULL DEFAULT 'New',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS requests (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  email VARCHAR(120) NOT NULL,
+  `type` VARCHAR(100) NOT NULL,
+  details TEXT NOT NULL,
+  status ENUM('New','In progress','Done') NOT NULL DEFAULT 'New',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS subscribers (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  email VARCHAR(120) NOT NULL UNIQUE,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- ===== Step 8: guides and academic information =====
+CREATE TABLE IF NOT EXISTS fees (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  course VARCHAR(150) NOT NULL,
+  per_term VARCHAR(60) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS units (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(150) NOT NULL,
+  department VARCHAR(100) NOT NULL,
+  trainer_ids VARCHAR(100) NULL
+);
+
+CREATE TABLE IF NOT EXISTS guides (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  section VARCHAR(30) NOT NULL,
+  issue VARCHAR(255) NOT NULL,
+  steps TEXT NOT NULL,
+  cost VARCHAR(255) NULL,
+  location VARCHAR(255) NULL,
+  note TEXT NULL,
+  contact_id INT NULL,
+  form_id INT NULL,
+  FOREIGN KEY (contact_id) REFERENCES contacts(id) ON DELETE SET NULL,
+  FOREIGN KEY (form_id) REFERENCES forms(id) ON DELETE SET NULL
+);
+
+CREATE TABLE IF NOT EXISTS course_requirements (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  course VARCHAR(150) NOT NULL,
+  requirement VARCHAR(200) NOT NULL,
+  duration VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS exam_timetable (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  unit VARCHAR(150) NOT NULL,
+  exam_date DATE NOT NULL,
+  exam_time VARCHAR(20) NOT NULL,
+  venue VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS academic_calendar (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  event VARCHAR(150) NOT NULL,
+  period VARCHAR(80) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS assignments (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  unit VARCHAR(150) NOT NULL,
+  assignment VARCHAR(255) NOT NULL,
+  due_date DATE NOT NULL
+);
+
+-- ===== Step 9: uploaded form files =====
+CREATE TABLE IF NOT EXISTS form_files (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  form_id INT NOT NULL UNIQUE,
+  original_name VARCHAR(255) NOT NULL,
+  stored_name VARCHAR(100) NOT NULL,
+  preview_name VARCHAR(100) NULL,
+  mime VARCHAR(100) NOT NULL,
+  size INT NOT NULL,
+  uploaded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (form_id) REFERENCES forms(id) ON DELETE CASCADE
+);

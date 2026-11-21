@@ -1,0 +1,15 @@
+:root {
+  --brand: #0b5d3b;
+  --brand-dark: #08452c;
+  --accent: #f2a900;
+}
+body { background: #f6f8f7; }
+.bg-brand { background: var(--brand) !important; }
+.btn-brand { background: var(--brand); color: #fff; border: 0; }
+.btn-brand:hover { background: var(--brand-dark); color: #fff; }
+.btn-accent { background: var(--accent); color: #212529; border: 0; }
+.hero { background: linear-gradient(135deg, var(--brand), var(--brand-dark)); color: #fff; }
+.module-card { transition: transform .15s, box-shadow .15s; border: 0; }
+.module-card:hover { transform: translateY(-4px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.15); }
+.module-icon { font-size: 2rem; color: var(--brand); }
+.footer { background: var(--brand-dark); color: #cfe3d8; }

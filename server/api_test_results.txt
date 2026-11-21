@@ -1,0 +1,45 @@
+API smoke test against http://localhost:5000/api
+
+PASS  GET /notices returns a non-empty list
+PASS  GET /forms returns a non-empty list
+PASS  GET /contacts returns a non-empty list
+PASS  GET /faqs returns a non-empty list
+PASS  GET /guides returns a non-empty list
+PASS  GET /units returns a non-empty list
+PASS  GET /fees returns a non-empty list
+PASS  GET /course_requirements returns a non-empty list
+PASS  GET /exam_timetable returns a non-empty list
+PASS  GET /academic_calendar returns a non-empty list
+PASS  GET /assignments returns a non-empty list
+PASS  GET /unknown returns 404
+PASS  POST /notices without a token is refused (401)
+PASS  Login with a wrong password is refused (401)
+PASS  Login with an SQL injection string is refused (401)
+PASS  Login with the correct password returns a token
+PASS  POST /notices with a token creates a notice (201)
+PASS  POST /notices with missing fields is rejected (400)
+PASS  PUT /notices/<id> updates the notice
+PASS  Edited notice appears in GET /notices
+PASS  DELETE /notices/<id> removes the notice (204)
+PASS  Deleted notice no longer appears
+PASS  POST /guides with optional fields left empty creates a guide
+PASS  DELETE /guides/<id> removes the test guide (204)
+PASS  POST /admin/notify without a token is refused (401)
+PASS  POST /admin/notify without a message is rejected (400)
+PASS  GET /admin/mail-status returns the mail set-up status
+PASS  An invalid unsubscribe link is rejected (400)
+PASS  POST /complaints returns a CMP reference
+PASS  Complaint with department 'Not sure' is routed to Student Affairs
+PASS  GET /admin/complaints without a token is refused (401)
+PASS  Administrator can list complaints and the test complaint is there
+PASS  Administrator can set a complaint to 'In progress'
+PASS  An invalid complaint status is rejected (400)
+PASS  Administrator can delete the test complaint (204)
+PASS  Deleted complaint no longer appears
+PASS  Complaint with an invalid email is rejected (400)
+PASS  POST /requests returns a REQ reference
+PASS  POST /subscribers accepts a valid email (201)
+PASS  Subscribing the same email twice does not fail
+PASS  POST /subscribers with an invalid email is rejected (400)
+
+Summary: 41 of 41 checks passed (100%)
